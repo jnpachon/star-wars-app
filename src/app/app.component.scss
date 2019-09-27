@@ -1,0 +1,18 @@
+.sidenav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: blue;
+  }
+  
+.content {
+    background-color: black;
+    .sidenav-button{
+        background-color: black;
+    }
+    mat-icon{
+        color: white;
+    }
+}
