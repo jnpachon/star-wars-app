@@ -1,0 +1,20 @@
+.title{
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-right: 10px;
+}
+
+.content{
+    text-decoration-color: black;
+    padding-right: 25px;
+
+    .menu-item{
+        border-bottom: 1px solid gray;
+        margin-top: 10px;
+        mat-icon{
+            margin-right: 10px;
+        }
+    }
+}

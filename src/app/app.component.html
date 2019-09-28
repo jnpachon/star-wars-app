@@ -1,16 +1,29 @@
-<mat-sidenav-container class="sidenav" *ngIf="shouldRun">
+<mat-sidenav-container *ngIf="shouldRun">
   <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
-               (closed)="events.push('close!')">
-    Sidenav content
+               (closed)="events.push('close!')" class="sidenav">
+    <app-sidenav-menu></app-sidenav-menu>
   </mat-sidenav>
 
   <mat-sidenav-content class="content">
     <p><button class="sidenav-button" mat-mini-fab (click)="sidenav.toggle()">
       <mat-icon aria-label="Menu">menu</mat-icon>
     </button></p>
-    <p>Events:</p>
-    <div class="example-events">
-      <div *ngFor="let e of events">{{e}}</div>
+    <div class="main-content">
+
+      <!-- image-logo -->
+      <img src="../assets/star_wars_logo_3.png">
+
+      <!-- button row -->
+      <div class="button-row">
+          <button mat-button>Home</button>
+          <button mat-button>People</button>
+          <button mat-button>Films</button>
+          <button mat-button>Starships</button>
+          <button mat-button>Vehicles</button>
+          <button mat-button>Species</button>
+          <button mat-button>Planets</button>
+      </div>
+
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -10,10 +10,12 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { SidenavMenuComponent } from './sidenav-menu/sidenav-menu.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidenavMenuComponent
   ],
   imports: [
     BrowserModule,
