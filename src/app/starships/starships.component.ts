@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-starships',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarshipsComponent implements OnInit {
 
-  constructor() { }
+  events:any[] = [];
+
+  constructor(protected dataService: DataService) {}
 
   ngOnInit() {
+    this.dataService.getStarships()
+    .subscribe(
+      (data) => { // Success
+        this.events = data['results'];
+        console.log( this.events );
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
-
 }

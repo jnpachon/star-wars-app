@@ -1,1 +1,10 @@
-<p>films works!</p>
+<div class="people-content">
+    <div *ngFor="let item of events">
+        <app-card 
+            title="Title: {{item.title}}"
+            subtitle="Episode: {{item.episode_id}}"
+            description="{{item.opening_crawl}}"
+            image="https://www.legaliondesetoiles.com/photo/art/grande/10863331-22444586.jpg?v=1510573049"
+        ></app-card>
+    </div>
+</div>

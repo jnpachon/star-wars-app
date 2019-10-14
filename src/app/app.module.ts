@@ -20,6 +20,8 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { SpeciesComponent } from './species/species.component';
 import { PlanetsComponent } from './planets/planets.component';
 import { CardComponent } from './card/card.component';
+import { HttpClientModule} from '@angular/common/http';
+import { DataService } from './data.service';
 
 const appRoutes: Routes = [
   { path: 'people', component: PeopleComponent },
@@ -56,9 +58,10 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

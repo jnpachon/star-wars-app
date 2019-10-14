@@ -1,1 +1,10 @@
-<p>planets works!</p>
+<div class="people-content">
+    <div *ngFor="let item of events">
+        <app-card 
+            title="Name: {{item.name}}"
+            subtitle="Rotation period: {{item.rotation_period}}"
+            description="Terrain: {{item.terrain}}"
+            image="https://starwarsblog.starwars.com/wp-content/uploads/2018/10/mustafar-tall.jpg"
+        ></app-card>
+    </div>
+</div>

@@ -1,1 +1,10 @@
-<p>species works!</p>
+<div class="people-content">
+    <div *ngFor="let item of events">
+        <app-card 
+            title="Name: {{item.name}}"
+            subtitle="Classification; {{item.classification}}"
+            description="Designation: {{item.designation}}"
+            image="https://render.fineartamerica.com/images/rendered/default/poster/10/8/break/images-medium-5/star-wars-edge-of-the-empire-species-lineup-2-ryan-barger.jpg"
+        ></app-card>
+    </div>
+</div>
