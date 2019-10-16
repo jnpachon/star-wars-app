@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Proyecto para la materia Front End
 
 Trabajo presentado por:
-* German David Bautista Montaña
+* German David Bautista Montaña Codigo 1711020765
 * Manuel Eduardo Castro Santana
 * Gian Carlo Gaviria Arias
 * Jose Nicolas Felipe Pachon Roncancio
